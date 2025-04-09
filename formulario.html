@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulário - Levantamento de Necessidades</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f0f4f8; padding: 40px; }
+    .container { max-width: 900px; margin: auto; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 0 20px rgba(0,0,0,0.05); }
+    h1, h2 { text-align: center; color: #2c3e50; }
+    h2 { font-size: 20px; margin-top: 40px; }
+    label { font-weight: bold; display: block; margin-top: 20px; }
+    input, textarea, select {
+      width: 100%; padding: 10px; margin-top: 5px;
+      border: 1px solid #ccc; border-radius: 8px;
+    }
+    textarea { resize: vertical; }
+    button {
+      margin-top: 30px; padding: 15px 20px;
+      background: #0073e6; color: white; font-size: 16px;
+      border: none; border-radius: 8px; cursor: pointer;
+    }
+    button:hover { background: #005bb5; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Levantamento de Necessidades</h1>
+    <form action="https://formspree.io/f/mwplavzb" method="POST">
+
+      <h2>Responsável pela demanda</h2>
+      <label>Nome completo</label>
+      <input type="text" name="responsavel_nome" required>
+      <label>Instituição</label>
+      <input type="text" name="responsavel_instituicao">
+      <label>Área</label>
+      <input type="text" name="responsavel_area">
+      <label>Cargo</label>
+      <input type="text" name="responsavel_cargo">
+      <label>E-mail</label>
+      <input type="email" name="responsavel_email">
+      <label>Telefone</label>
+      <input type="text" name="responsavel_telefone">
+      <label>Funções no projeto</label>
+      <input type="text" name="responsavel_funcoes">
+
+      <h2>Ponto focal (se diferente do responsável)</h2>
+      <label>Nome completo</label>
+      <input type="text" name="ponto_nome">
+      <label>Instituição</label>
+      <input type="text" name="ponto_instituicao">
+      <label>Área</label>
+      <input type="text" name="ponto_area">
+      <label>Cargo</label>
+      <input type="text" name="ponto_cargo">
+      <label>E-mail</label>
+      <input type="email" name="ponto_email">
+      <label>Telefone</label>
+      <input type="text" name="ponto_telefone">
+      <label>Funções no projeto</label>
+      <input type="text" name="ponto_funcoes">
+
+      <h2>Cenário e demanda</h2>
+      <label>Área requisitante</label>
+      <input type="text" name="area_requisitante">
+      <label>Resumo da demanda</label>
+      <textarea name="resumo_demanda"></textarea>
+      <label>O que gerou a demanda?</label>
+      <textarea name="origem_demanda"></textarea>
+      <label>Relacionado a objetivo estratégico?</label>
+      <textarea name="objetivo_estrategico"></textarea>
+      <label>Contexto atual</label>
+      <textarea name="contexto_atual"></textarea>
+      <label>Contexto desejado</label>
+      <textarea name="contexto_desejado"></textarea>
+
+      <h2>Relacionamentos com outros projetos</h2>
+      <label>Relacionado a outro projeto?</label>
+      <textarea name="relacao_outro_projeto"></textarea>
+      <label>É pré-requisito para outro projeto?</label>
+      <textarea name="pre_requisito_projeto"></textarea>
+
+      <h2>Detalhes da Solução</h2>
+      <label>Abrangência do projeto</label>
+      <input type="text" name="abrangencia_projeto">
+      <label>Modalidade de ensino</label>
+      <input type="text" name="modalidade_ensino">
+      <label>Tipo de solução</label>
+      <input type="text" name="tipo_solucao">
+      <label>Hospedagem em LMS? Qual?</label>
+      <input type="text" name="lms">
+
+      <label>Estratégia educacional</label>
+      <textarea name="estrategia_educacional"></textarea>
+      <label>Ações já realizadas</label>
+      <textarea name="acoes_realizadas"></textarea>
+      <label>Prazo previsto</label>
+      <textarea name="prazo"></textarea>
+      <label>Carga horária</label>
+      <textarea name="carga_horaria"></textarea>
+
+      <h2>Público-alvo</h2>
+      <label>Quantidade de participantes</label>
+      <input type="number" name="quantidade_participantes">
+      <label>Faixa etária</label>
+      <input type="text" name="faixa_etaria">
+      <label>Nível de instrução</label>
+      <input type="text" name="nivel_instrucao">
+      <label>Área(s) de atuação</label>
+      <input type="text" name="areas_atuacao">
+      <label>Função(ões)</label>
+      <input type="text" name="funcoes_exercidas">
+      <label>Relação com a temática</label>
+      <textarea name="relacao_tematica"></textarea>
+      <label>Nível de conhecimento</label>
+      <input type="text" name="nivel_conhecimento">
+      <label>Pré-requisitos?</label>
+      <textarea name="pre_requisitos"></textarea>
+
+      <h2>Resultados esperados</h2>
+      <label>Resultados para o público</label>
+      <textarea name="resultados_esperados"></textarea>
+      <label>Teoria vs Prática no dia a dia</label>
+      <textarea name="teoria_pratica"></textarea>
+      <label>Objetivos de aprendizagem</label>
+      <textarea name="objetivos_aprendizagem"></textarea>
+
+      <h2>Conteúdo</h2>
+      <label>Assuntos a serem abordados</label>
+      <textarea name="assuntos_abordados"></textarea>
+      <label>Conteúdos existentes (nome e formato)</label>
+      <textarea name="conteudos_existentes"></textarea>
+      <label>Quantidade de páginas/laudas</label>
+      <input type="text" name="quantidade_paginas">
+      <label>Natureza do conteúdo</label>
+      <textarea name="natureza_conteudo"></textarea>
+      <label>Há especialista(s)?</label>
+      <textarea name="especialistas"></textarea>
+      <label>Frequência de atualização</label>
+      <textarea name="frequencia_atualizacao"></textarea>
+
+      <button type="submit">Enviar formulário</button>
+    </form>
+  </div>
+</body>
+</html>
